@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Contact Form</title>
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&display=swap" rel="stylesheet">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+        <link rel="stylesheet" href="./styles/normalize.css">
+        <link rel="stylesheet" href="./styles/style.css">
+    </head>
+    <body>
+        <section class="contact">
+            <form action="#" class="contact-section" method="GET">
+
+                <div>
+                    <h1 class="contact-section_title">We would like to help you</h1>
+                </div>
+                <div>
+                    <label for="userName"></label>
+                    <input 
+                        class="contact-input" 
+                        type="text" 
+                        name="userName" 
+                        id="userName" 
+                        placeholder="Name" 
+                        maxlength="40"
+                    >
+                </div>
+
+                <div>
+                    <label for="userMessage"></label>
+                    <textarea 
+                        class="contact-input contact-message" 
+                        name="userMessage" 
+                        id="userMessage" 
+                        placeholder="Message" 
+                        minlength="20" 
+                        maxlength="200"></textarea>
+                </div>
+
+                <div>
+                    <p class="contact-section_subtitle">How to answer you?</p>
+                </div>
+
+                <div>
+                    <label for="userPhoneNumber"></label>
+                    <input 
+                        class="contact-input" 
+                        type="tel" 
+                        name="userPhoneNumber" 
+                        id="userPhoneNumber" 
+                        placeholder="Phone number" 
+                        pattern="^\+380\d{2}\d{3}\d{2}\d{2}$"
+                    >
+                    <p class="error">Please match the request format: +380739092020</p>
+                </div>
+
+                <div>
+                    <label for="userEmail"></label>
+                    <input
+                        class="contact-input"
+                        type="email"
+                        name="userEmail"
+                        id="userEmail"
+                        placeholder="Email"
+                    >
+                </div>
+
+                <div>
+                    <input
+                        class="button-submit" 
+                        type="submit" 
+                        value="Send message"
+                    >
+                </div>
+
+                <div>
+                    <button 
+                        class="button-reset" 
+                        value="">
+                    </button>
+                </div>
+
+            </form>
+        </section>
+    </body>
+</html>

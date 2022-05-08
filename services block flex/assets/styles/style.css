@@ -1,0 +1,110 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+html, body {
+    height: 100%;
+}
+
+body {
+    font-family: 'Montserrat', sans-serif;
+    font-style: normal;
+}
+
+.wrapper {
+    width: 1320px;
+    margin: 0 auto;
+}
+
+.services-block {
+    background-image: linear-gradient(228.57deg, #323264 11.93%, #323264 57.17%, #643E72 87.46%);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    padding: 60px 0;
+    font-size: 0;
+}
+
+a {
+    text-decoration: none;
+}
+
+.services-title {
+    font-weight: 700;
+    margin-bottom: 60px;
+    font-size: 0;
+    position: relative;
+}
+
+.services-title a {
+    font-size: 14px;
+    line-height: 17px;
+    letter-spacing: 1px;
+    text-transform: uppercase;
+    color: #24A3FF;
+    display: inline-block;
+    margin-bottom: 10px;
+}
+
+
+.services-title a::after {
+    content: url('../images/arrow.svg');
+    display: inline-block;
+    width: 12px;
+    height: 12px;
+    position: absolute;
+    top: 2px;
+    margin-left: 2px;
+}
+
+.services-title a:hover {
+    color: #F0145A;
+}
+
+.services-title a:hover::after {
+    content: url('../images/arrow-red.svg');
+}
+
+.services-title h2 {
+    font-size: 38px;
+    line-height: 46px;
+    background: linear-gradient(90.13deg, #F0145A 0.84%, #EF8080 99.96%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+.services {
+    display: flex;
+    flex-flow: row wrap;
+    gap: 60px;
+    justify-content: stretch;
+}
+
+.service {
+    width: 400px;
+    font-size: 0;
+}
+
+.service img {
+    margin-bottom: 30px;
+    width: 92px;
+    height: 92px;
+}
+
+.service h3 {
+    font-weight: 700;
+    font-size: 22px;
+    line-height: 27px;
+    color: #24A3FF;
+    margin-bottom: 15px;
+}
+
+.service p {
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 26px;
+    color: #FFFFFF;
+    align-self: stretch;
+}
