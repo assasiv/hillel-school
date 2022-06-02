@@ -702,10 +702,13 @@ a[href^="tel:"]:hover {
             font-size: 30px;
             line-height: 37px;
             font-weight: $bold;
+            cursor: pointer;
 
-            &:hover{
-                color: $cl-red;
-                background: unset;
+            &.active {
+                background: $cl-grad-txt;
+                -webkit-background-clip: text;
+                -webkit-text-fill-color: transparent;
+                background-clip: text;
                 -webkit-text-fill-color: $cl-red;
                 
             }
@@ -733,6 +736,77 @@ a[href^="tel:"]:hover {
             font-weight: $regular;
         }
     }
+
+
+}
+
+.achv-block {
+    width: 100%;
+    padding: 30px 60px 30px 76px;
+    
+
+    background-color: $cl-grey-bg;
+
+    &_items {
+
+        // justify-content: center;
+        // align-items: center;
+    }
+
+    &_item {
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+        gap: 40px;
+        justify-content: center;
+        align-items: center;
+
+    }
+
+    &_cover {
+        width: 255px;
+        height: 90px;
+        background-color: $cl-white;
+        border-radius: 12px;
+        overflow: hidden;
+        padding-top: 25px;
+        padding-bottom: 25px;
+        font-size: 0;
+
+        display: flex;
+        justify-content: center;
+        
+        & img {
+            object-fit: contain;
+            width: 100%;
+            height: 100%;
+        }
+    }
+    
+    
+    & ul li::before {
+        content: '';
+    }
+
+    & h2 {
+        font-size: 14px;
+        line-height: 17px;
+        font-weight: $bold;
+        letter-spacing: 1px;
+        text-transform: uppercase;
+        color: $cl-main;
+        width: 80%;
+        text-align: center;
+        margin-left: auto;
+        margin-right: auto;
+        margin-bottom: 30px;
+    }
+
+    & .slider-main {
+        display:none;
+    }
+
+    
 }
 
 .benefits-mob {
@@ -781,7 +855,7 @@ a[href^="tel:"]:hover {
 
 .team-block {
     width: 100%;
-    margin-bottom: 60px;
+    margin-bottom: 96px;
 
     &_items {
         background-color: $cl-grey-bg;
@@ -818,6 +892,35 @@ a[href^="tel:"]:hover {
             line-height: 22px;
         }
     }
+
+    & ul li::before {
+        content: '';
+    }
+
+
+}
+
+.slick-dots li.slick-active button::before {
+    opacity: 1;
+    color: $cl-blue;
+
+
+}
+
+.slick-dots li button:before {
+    font-size: 14px;
+    width: 16px;
+    height: 16px;
+    color: $cl-blue;
+
+}
+
+.slick-dots {
+    bottom: -76px;
+}
+
+.slick-dots li button:hover {
+    opacity: 0.75;
 }
 
 .team-member_info h4 {
@@ -1704,6 +1807,8 @@ a[href^="tel:"]:hover {
 
 
 }
+
+
 
 
 

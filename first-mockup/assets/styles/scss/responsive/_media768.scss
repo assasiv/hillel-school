@@ -137,6 +137,21 @@
     }
 }
 
+.achv-block {
+
+    & .slider-mob {
+        display: none;
+    }
+
+    & .slider-main {
+        display: block;
+    }
+
+    &_cover {
+        width: 132px;
+    }
+}
+
 .benefits-mob {
     margin-right: -60px;
 }
