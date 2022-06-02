@@ -1,0 +1,88 @@
+.wrapper {
+    max-width: 1320px;
+}
+
+.header-content {
+    margin-top: 265px;
+}
+
+.header-title {
+    width: 70%;
+}
+
+.about-block {
+    padding-right: 97px;
+    padding-left: 97px;
+}
+
+.entry-page {
+    padding-left: 120px;
+    padding-right: 120px;
+}
+
+.about-page {
+    &_cover {
+        height: 438px;
+
+        & .cover-title {
+            font-size: 96px;
+            line-height: 117px;
+        }
+    }
+}
+
+
+.entry-team {
+
+    position: relative;
+
+    &_header {
+
+        padding-left: 460px;
+
+
+        & .member-cover {
+            width: 400px;
+            height: 500px;
+            left: 120px;
+        }
+
+    }
+
+    &_info {
+        padding-left: 460px;
+    }
+
+    & .member-social {
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+        align-items: center;
+        gap: 26px;
+        position: relative;
+
+        & li {
+            margin-bottom: 0;
+
+            &:not(:first-of-type)::before {
+                content: '';
+                position: absolute;
+                top: 11px;
+                width: 6px;
+                height: 6px;
+                background-color: $cl-separator;
+                border-radius: 50%;
+                margin-left: -16px;
+            }
+        }
+    }
+    
+}
+
+.team-block {
+
+    &_cover {
+        width: 400px;
+        height: 344px;
+    }
+}

@@ -1,0 +1,186 @@
+.wrapper {
+    max-width: 904px;
+}
+
+.bg-dark {
+    & .header-nav {
+
+        &_address.nav-address li:nth-of-type(1) {
+            color: $cl-white;
+        }
+    } 
+}
+
+.header {
+
+    &-main {
+        background-size: contain;
+    }
+
+
+    &-block {
+        grid-template-columns: 1fr 2fr;
+        grid-template-rows: 1fr 1fr;
+        height: 66px;
+    }
+
+    &-content {
+        margin-top: 245px;
+    }
+
+    .nav_logo {
+        order: 1;
+        grid-row: 1/3;
+        grid-column: 1/2;
+    }
+    
+    .nav_info {
+        order: 2;
+        justify-self: end;
+    }
+
+    .nav_menu {
+        justify-self: end;
+    }
+}
+
+.nav-menu nav {
+    justify-content: right;
+}
+
+.benefits-mob {
+    margin-right: 0;
+}
+
+.about-block {
+
+    display: grid;
+    grid-template-columns: 435px 1fr;
+    align-items: center;
+
+    &_benefits {
+        grid-auto-flow: row;
+        grid-auto-rows: max-content;
+        text-align: end;
+        overflow-x: hidden;
+    }
+
+    &_info {
+        padding-top: 0;
+        padding-left: 60px;
+        border-top: none;
+        border-left: 4px solid rgba(255, 255, 255, 0.3);
+    }
+
+}
+
+.services-block {
+
+    &_items {
+        grid-template-rows: max-content;
+        grid-template-columns: 1fr 1fr 1fr;
+        gap: 60px;
+    }
+}
+
+.team-block {
+
+    &_item {
+        // grid-template-columns: 400px 1fr;
+        flex-direction: row;
+        
+    }
+
+    &_cover {
+        min-width: 400px;
+        height: 528px;
+        border-radius: 12px 0 0 12px;
+    }
+    
+}
+
+.clients-block {
+
+    &_items {
+        &.clients-dskt {
+            grid-template-columns: repeat(4, 1fr);
+        }
+    }
+}
+
+.blog-block {
+
+    &_items {
+        grid-template-columns: 1fr 1fr 1fr;
+    }
+
+    &_item {
+        &:nth-child(3) {
+            grid-column: initial;
+        }
+    }
+}
+
+.contact-block {
+    flex-direction: row;
+}
+
+
+.about-page {
+
+    &_benefits {
+        flex-direction: row;
+    }
+
+    & .benefits-point {
+
+        width: 354px;
+    }
+
+    & .benefits-title h2 {
+        width: 362px;
+        margin-left: 30px;
+    }
+
+    &_cover {
+        height: 312px;
+
+        & .cover-title {
+            font-size: 86px;
+            line-height: 105px;
+        }
+    }
+}
+
+
+.team-page {
+
+    & h2 {
+        font-size: 38px;
+        line-height: 46px;
+    }
+
+    &_members {
+        grid-template-columns: 1fr 1fr 1fr;
+    }
+}
+
+.entry-team {
+
+    position: relative;
+
+    &_header {
+
+        padding-left: 360px;
+
+        & .member-cover {
+            position: absolute;
+            top:0;
+            left:0;
+        }
+    }
+
+    &_info {
+        padding-left: 360px;
+    }
+}

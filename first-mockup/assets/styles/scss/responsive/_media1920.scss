@@ -1,0 +1,36 @@
+.wrapper {
+    max-width: 1600px;
+}
+
+   .header-content {
+    margin-top: 361px;
+}
+
+.clients-block {
+
+    margin-bottom: 60px;
+
+    &_items {
+        border-radius: 12px;
+        overflow: hidden;
+    }
+
+    &_item {
+        width: 430px;
+    }
+
+}
+
+.about-page {
+    &_cover {
+        height: 586px;
+    }
+}
+
+.team-block {
+
+    &_cover {
+        width: 400px;
+        height: 298px;
+    }
+}
