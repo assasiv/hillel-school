@@ -17,9 +17,8 @@
         background-size: contain;
     }
 
-
     &-block {
-        grid-template-columns: 1fr 2fr;
+        grid-template-columns: 40% 60%;
         grid-template-rows: 1fr 1fr;
         height: 66px;
     }
@@ -53,7 +52,6 @@
 }
 
 .about-block {
-
     display: grid;
     grid-template-columns: 435px 1fr;
     align-items: center;
@@ -71,7 +69,6 @@
         border-top: none;
         border-left: 4px solid rgba(255, 255, 255, 0.3);
     }
-
 }
 
 .services-block {
@@ -86,9 +83,7 @@
 .team-block {
 
     &_item {
-        // grid-template-columns: 400px 1fr;
         flex-direction: row;
-        
     }
 
     &_cover {
@@ -96,7 +91,6 @@
         height: 528px;
         border-radius: 12px 0 0 12px;
     }
-    
 }
 
 .clients-block {
@@ -125,7 +119,6 @@
     flex-direction: row;
 }
 
-
 .about-page {
 
     &_benefits {
@@ -152,7 +145,6 @@
     }
 }
 
-
 .team-page {
 
     & h2 {
@@ -166,7 +158,6 @@
 }
 
 .entry-team {
-
     position: relative;
 
     &_header {
@@ -190,5 +181,31 @@
     &_cover {
         width: 196px;
         height: 110px;
+    }
+}
+
+.footer-block {
+
+    & .info-legal {
+        display: none;
+    }
+
+    &_items {
+        padding: 0;
+    }
+
+    & .nav-address {
+        align-items: center;
+    }
+    
+    &_address {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        vertical-align: middle;
+
+        & .info-legal {
+            display: block;
+        }
     }
 }

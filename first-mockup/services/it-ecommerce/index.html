@@ -29,6 +29,7 @@
                                 <li><a href="#">ру</a></li>
                                 <li><a href="#" class="active">en</a></li>
                             </ul>
+
                             <ul class="header-nav_address  nav-address">
                                 <li>Kyiv, Mechnikova str., 14/1</li>
                                 <li><a href="tel:+30800211927">0800 211 927</a></li>
@@ -67,6 +68,7 @@
                                     </div>
                                 </div>
                             </div>
+
                             <div class="main-nav">
                                 <div>
                                     <nav>
@@ -82,6 +84,7 @@
                     </div>
                 </header>
 
+                <!-- services entry block start -->
                 <section class="service-block entry-page wrapper">
                     <div class="service-block_item">
                         <img src="../../assets/img/service1.svg" alt="services">
@@ -116,10 +119,11 @@
                             </ul>
                         </div>
                     </div>
-
                 </section>
+                <!-- services entry block end -->
             </div>
 
+            <!-- blog block start -->
             <div class="bg-grey">
                 <section class="blog-block wrapper">
                     <div class="block-title">
@@ -130,12 +134,13 @@
                             Recommended
                         </h2>
                     </div>
+
                     <div class="blog-block_items">
                         <div class="blog-block_item">
-
                             <div class="blog-block_cover">
                                 <a href="../../publications/article-1/"><img src="../../assets/img/blog/blog-article-1.png" alt="Blog article"></a>
                             </div>
+
                             <div class="blog-block_content">
                                 <h4>
                                     <a href="../../publications/article-1/">Equity associate</a>
@@ -144,13 +149,13 @@
                                 <hr>
                                 <p>I'm a jun on projects. I am a co-owner of a law firm. How it happened. Before entering my parents told me that if I…</p>
                             </div>
-
                         </div>
-                        <div class="blog-block_item">
 
+                        <div class="blog-block_item">
                             <div class="blog-block_cover">
                                 <a href="../../publications/article-2/"><img src="../../assets/img/blog/blog-article-2.png" alt="Blog article"></a>
                             </div>
+
                             <div class="blog-block_content">
                                 <h4>
                                     <a href="../../publications/article-2/">Penalty for the Good Corporation: what will happen to Google and others for violating the GDPR</a>
@@ -159,14 +164,13 @@
                                 <hr>
                                 <p>And why the recovery of 50 million euros could be a fateful precedent According to Mind.ua January 21 National Commission for Data Protection.</p>
                             </div>
-
                         </div>
 
                         <div class="blog-block_item">
-
                             <div class="blog-block_cover">
                                 <a href="../../publications/article-3/"><img src="../../assets/img/blog/blog-article-3.png" alt="Blog article"></a>
                             </div>
+
                             <div class="blog-block_content">
                                 <h4>
                                     <a href="../../publications/article-3/">Millennial Testament</a>
@@ -175,16 +179,15 @@
                                 <hr>
                                 <p>What and how modern vloggers, opinion leaders and crypto-millionaires will inherit A typical legacy of the Ukrainian generation X looks like this: an apartment in…</p>
                             </div>
-
                         </div>
                     </div>
                 </section>
             </div>
+            <!-- blog block end -->
 
+            <!-- footer block start -->
             <footer class="footer-block bg-grey">
                 <div class="footer-block_items wrapper">
-                    <hr>
-
                     <div class="footer-block_address">
                         <div>
                             <ul class="nav-address">
@@ -193,7 +196,7 @@
                             </ul>
                         </div>
                         <div class="info-legal">
-                            <p>© 2021 HLEGAL Law company, LLC</p>
+                            <p>&copy; 2021 HLEGAL Law company, LLC</p>
                         </div>
                     </div>
                     
@@ -202,8 +205,8 @@
                             <li>
                                 <a href="#">
                                     <svg 
-                                        width="24" 
-                                        height="24" 
+                                        width="38" 
+                                        height="38" 
                                         viewBox="0 0 24 25" 
                                         fill="none" 
                                         xmlns="http://www.w3.org/2000/svg">
@@ -220,22 +223,18 @@
                         </ul>
                     </div>
                     <div class="info-legal">
-                        <p>© 2021 HLEGAL Law company, LLC</p>
+                        <p>&copy; 2021 HLEGAL Law company, LLC</p>
                     </div>
                 </div>
             </footer>
+            <!-- footer block end -->
         </div>
 
+        <!-- contact pop-up block start -->
         <div class="contact-popup">
+            <form action="#" class="contact-form" method="POST">
 
-            <form action="#" class="contact-form" method="GET">
-
-                <div class="contact-close"><div><input
-                    type="reset" 
-                    value=""
-                    ></div>
-                    
-                </div>
+                <div class="contact-close"><div></div></div>
 
                 <div>
                     <h2 class="title-md title-grad">We would like to help you</h2>
@@ -261,6 +260,7 @@
                         placeholder="Message" 
                         minlength="20" 
                         maxlength="200"></textarea>
+                        <p class="error">Minimal message lenth 20 characters</p>
                 </div>
 
                 <div>
@@ -277,7 +277,7 @@
                         placeholder="Phone number" 
                         pattern="^\+380\d{2}\d{3}\d{2}\d{2}$"
                     >
-                    <!-- <p class="error">Please match the request format: +380739092020</p> -->
+                    <p class="error">Please match the request format: +380739092020</p>
                 </div>
 
                 <div>
@@ -289,22 +289,23 @@
                         id="userEmail"
                         placeholder="Email"
                     >
+                    <p class="error">Please match the email format: sample@sample.com</p>
                 </div>
 
                 <div class="btn-progress">
                     <input
                         class="btn" 
                         id="submit"
-                        type="submit" 
+                        type="button" 
                         value="Send message"
                     >
                 </div>
             </form>
-            
-
         </div>
+        <!-- contact pop-up block end -->
 
         <script src="../../assets/js/jquery-3.6.0.min.js"></script>
+        <script src="../../assets/assets/slick/slick.min.js"></script>
         <script src="../../assets/js/main.js"></script>
     </body>
 </html>

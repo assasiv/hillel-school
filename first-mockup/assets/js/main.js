@@ -5,26 +5,29 @@ $('.service-block_item .btn').click(function() {
 
 $('.contact-close').click(function() {
     $('.contact-popup').removeClass('active');
-  })
+})
 
-
-// $('.service-block_item .btn').click(function(event) {
-//     $(".contact-popup").fadeIn('4000');
-// });
-
-// $('.contact-close').click(function(event) {
-//     $(".contact-popup").fadeOut('slow');
-// });
+$('.contact-close').click(function() {
+    $('.contact-popup').removeClass('active');
+})
 
 $('#submit').click(function() {
-  console.log("clicked");
-    // find('input[type="submit"]')
-    $('#submit').val('');
-    $('.btn-progress').addClass('active');
+  $('#submit').val('');
+  $('.btn-progress').addClass('active');
+  setTimeout(() => {
+      $('.btn-progress').removeClass('active');
+      $('#submit').val("Sent");
+      $('#submit').addClass('sent');
+      $('#submit').attr('disabled', true);
+  }, 3000);
+});
 
-    if($('#submit').val() == 'Sent') {
-        $('.btn-progress').removeClass('active');}
- });
+$(".contact-input").keyup(function(event) {
+  if ($(".contact-input").attr('invalid', true)) {
+    $(".btn-progress").addClass('invalid');
+    console.log ('just do it')
+  }
+});
 
 
  $('#slider').slick({
@@ -36,6 +39,21 @@ $('#submit').click(function() {
   dots: true,
   arrows: false,
 });
+
+$('#articles').click(function() {
+  $("div.blog-toggle").removeClass("active"); 
+  $("#articles").addClass("active"); 
+  $(".blog-news").addClass("hidden"); 
+ });
+
+ $('#news').click(function() {
+  $("div.blog-toggle").removeClass("active"); 
+  $("#news").addClass("active"); 
+  $(".blog-news").removeClass("hidden"); 
+ });
+
+
+
 
 $('#benf-1').click(function() {
   console.log("text");
@@ -81,6 +99,7 @@ $('#benf-2').click(function() {
   $( "#about-txt" ).text("Lorem ipsum dolor sit amet consectetur adipisicing elit. Necessitatibus minus illum ad molestiae cumque debitis numquam laboriosam! Soluta fugiat ex sequi praesentium officiis beatae sint nemo, omnis aliquam, consequuntur maxime.");
 
  });
+
 
 
 

@@ -53,7 +53,6 @@ h4 {
     line-height: 20px;
 }
 
-
 p {
 	margin: 0;
     font-size: 16px;
@@ -66,10 +65,9 @@ img {
 	height: auto;
 }
 
-
 a {
     text-decoration: none;
-    color: $cl-blue-hover;
+    color: $cl-blue;
 
     &:hover {
         color: $cl-red;
@@ -114,8 +112,6 @@ hr {
 .fs-clean {
     font-size: 0 !important;
 }
-
-
 
 .container {
     background-color: $cl-white;
@@ -163,18 +159,14 @@ hr {
         }
 
         & li a:hover {
-
             background-color: $cl-grey-bg;
             color: $cl-grey-txt;
-
         }
     }
 
     & .mb-none {
         margin-bottom: 0;
     }
-
-
 }
 
 .bg-grey {
@@ -190,7 +182,7 @@ hr {
     border-radius: 0 0 12px 12px;
     position: relative;
     padding-bottom: 60px;
-    margin-bottom: 80px;
+    margin-bottom: 50px;
 
     &::before, 
     &::after {
@@ -202,7 +194,6 @@ hr {
         left: 20px;
         right: 20px;
         bottom: 3px;
-
     }
 
     &::after {
@@ -331,7 +322,6 @@ hr {
     & li a svg:hover #facebook {
         fill: $cl-red;
     }
-
 }
 
 
@@ -349,11 +339,10 @@ hr {
         background-repeat: no-repeat;
         background-position: center;
         background-size: cover;
-        // margin-bottom: 60px;
     }
     
-
     &-logo {
+
         position: relative;
         
         & img {
@@ -375,7 +364,6 @@ hr {
         & li::before {
             content: none;
         }
-
     }
 
     &-info {
@@ -408,7 +396,6 @@ hr {
                 background-color: rgba(255, 255, 255, 0.2);
                 border-radius: 8px;
             }
-
         }
 
         &_address {
@@ -484,14 +471,7 @@ hr {
     font-size: 0;
     line-height: unset;
     display: flex;
-
-    & a {
-        // display: inline-block;
-    }
-    
-
 }
-
 
 .nav_info {
     order: 1;
@@ -501,15 +481,10 @@ hr {
     order: 3;
 }
 
-
-
-
-
 .block-title {
     position: relative;
     margin-bottom: 30px;
 }
-
 
 .mob-nav {
 
@@ -613,7 +588,7 @@ hr {
         background-color: $cl-white;
         visibility: hidden;
 
-        > div {
+        & > div {
             position: fixed;
             top: 0px;
             left: 0;
@@ -709,8 +684,10 @@ a[href^="tel:"]:hover {
                 -webkit-background-clip: text;
                 -webkit-text-fill-color: transparent;
                 background-clip: text;
-                -webkit-text-fill-color: $cl-red;
-                
+            }
+
+            &:hover {
+                color: $cl-red;
             }
         }
     }
@@ -736,22 +713,12 @@ a[href^="tel:"]:hover {
             font-weight: $regular;
         }
     }
-
-
 }
 
 .achv-block {
     width: 100%;
-    padding: 30px 60px 30px 76px;
-    
-
+    padding: 30px 60px 43px;
     background-color: $cl-grey-bg;
-
-    &_items {
-
-        // justify-content: center;
-        // align-items: center;
-    }
 
     &_item {
         display: flex;
@@ -760,7 +727,6 @@ a[href^="tel:"]:hover {
         gap: 40px;
         justify-content: center;
         align-items: center;
-
     }
 
     &_cover {
@@ -772,7 +738,6 @@ a[href^="tel:"]:hover {
         padding-top: 25px;
         padding-bottom: 25px;
         font-size: 0;
-
         display: flex;
         justify-content: center;
         
@@ -806,11 +771,17 @@ a[href^="tel:"]:hover {
         display:none;
     }
 
-    
+    .slick-dotted.slick-slider {
+        margin-bottom: 0;
+    }
+
+    & .slick-dots {
+        bottom: -68px;
+    }
 }
 
 .benefits-mob {
-    margin-right: -15px;
+    margin-right: -30px;
 }
 
 
@@ -818,7 +789,6 @@ a[href^="tel:"]:hover {
 
     display: flex;
     flex-direction: column;
-
 
     &_items {
         display: grid;
@@ -855,7 +825,7 @@ a[href^="tel:"]:hover {
 
 .team-block {
     width: 100%;
-    margin-bottom: 96px;
+    margin-bottom: 106px;
 
     &_items {
         background-color: $cl-grey-bg;
@@ -896,15 +866,11 @@ a[href^="tel:"]:hover {
     & ul li::before {
         content: '';
     }
-
-
 }
 
 .slick-dots li.slick-active button::before {
     opacity: 1;
     color: $cl-blue;
-
-
 }
 
 .slick-dots li button:before {
@@ -912,7 +878,6 @@ a[href^="tel:"]:hover {
     width: 16px;
     height: 16px;
     color: $cl-blue;
-
 }
 
 .slick-dots {
@@ -926,7 +891,6 @@ a[href^="tel:"]:hover {
 .team-member_info h4 {
     margin-bottom: 6px;
 }
-
 
 .clients-block {
 
@@ -942,8 +906,8 @@ a[href^="tel:"]:hover {
         margin-left: auto;
         margin-right: auto;
         margin-bottom: 30px;
+        padding-top: 30px;
     }
-
 
     &_items {
         font-size: 0;
@@ -951,7 +915,6 @@ a[href^="tel:"]:hover {
         &.clients-dskt {
             display: none;
         }
-    
     }
 
     &_item {
@@ -965,10 +928,6 @@ a[href^="tel:"]:hover {
             object-fit: cover;
         }
     }
-
-
-
-
 }
 
 .blog-block {
@@ -1009,7 +968,6 @@ a[href^="tel:"]:hover {
 
         & h4 {
             color: $cl-blue-active;
-
         }
 
         & span {
@@ -1030,10 +988,6 @@ a[href^="tel:"]:hover {
         display: block;
         width: 211px;
         margin: 30px auto 0;
-    }
-
-    &.entry-page {
-        padding-top: 0;
     }
 
     &_entry {
@@ -1091,25 +1045,57 @@ a[href^="tel:"]:hover {
                     font-size: 14px;
                     line-height: 22px;
                     text-align: center;
-
                 }
-
-
             }
         }
+    }
 
+    &_toggle {
+        width: fit-content;
+        height: 42px;
+        background: $cl-separator;
+        border-radius: 12px;
+        padding: 2px;
+        margin-left: auto;
+        margin-right: auto;
+        margin-bottom: 30px;
+        display: flex;
+        flex-flow: wrap row;
+        gap: 2.5px;
 
+        & .blog-toggle {
+
+            font-weight: $bold;
+            font-size: 16px;
+            line-height: 20px;
+            padding: 8px 30px 10px;
+            background-color: transparent;
+            border-radius: 12px;
+            color: $cl-main;
+            cursor: pointer;
+
+            &:hover {
+                background-color: $cl-grey-bg;
+            }          
+        }
+
+        & .active {
+            background-color: $cl-white;
+        }
+    }
+
+    & .blog-news.hidden {
+        display: none;
+    }
+
+    & .blog-articles.hidden {
+        display: none;
     }
 }
 
 .entry-page .blog-block_item:nth-child(3) {
     grid-column: inherit;
 }
-
-
-
-
-
 
 .footer-block {
     font-size: 16px;
@@ -1124,7 +1110,6 @@ a[href^="tel:"]:hover {
         flex-direction: column;
         justify-content: center;
         gap: 20px;
-    
     }
 
     & hr {
@@ -1132,7 +1117,6 @@ a[href^="tel:"]:hover {
     }
 
     &_address {
-
 
         & .nav-address {
 
@@ -1153,8 +1137,6 @@ a[href^="tel:"]:hover {
         }
     }
 
-
-
     &_social {
 
         margin-bottom: 10px;
@@ -1162,11 +1144,24 @@ a[href^="tel:"]:hover {
         & .nav-address {
             display: flex;
             flex-direction: column;
+
             gap: 10px;
 
+            & li {
+                font-size: 0;
+
+                & a {
+                    font-size: 16px;
+                    line-height: 20px;
+                }
+
+                & a[href^="tel:"] {
+                    color: $cl-alt;
+                }
+            }
 
             & li a svg #facebook {
-                fill: $cl-blue-hover;
+                fill: $cl-blue;
             }
 
             & li a svg:hover #facebook {
@@ -1182,10 +1177,7 @@ a[href^="tel:"]:hover {
         color: $cl-grey-txt;
         line-height: inherit;
     }
-    
 }
-
-
 
 .service-block {
 
@@ -1245,10 +1237,12 @@ a[href^="tel:"]:hover {
         background:$cl-blue-active;
     }
 
+    &.sent {
+        box-shadow: none;
+        background-color: $cl-grey-alt;
+        color: $cl-main;
+    }
 }
-
-
-
 
 .blog-social {
 
@@ -1262,31 +1256,20 @@ a[href^="tel:"]:hover {
         border-radius: 12px;
         background-color: $cl-grey-bg;
         padding: 9px;
-
     }
 }
 
-
-
 .contact-block {
-
     display: flex;
     flex-direction: column;
     gap: 30px;
     margin-bottom: 30px;
-
-
-
-
 
     &_info {
         display: flex;
         flex-direction: column;
         gap: 15px;
         width: 100%;
-
-        
-        
 
         & span {
             display: inline-block;
@@ -1298,15 +1281,12 @@ a[href^="tel:"]:hover {
             font-weight: $bold;
             text-transform: uppercase;
             margin-left: 10px;
-            
         }
     }
 
     & ul li {
 
         &:not(:last-of-type) {
-        
-
             font-size: 21px;
             line-height: 30px;
             color: $cl-main;
@@ -1324,24 +1304,18 @@ a[href^="tel:"]:hover {
             color: $cl-red;
         }
     }
-    
 
     &_form {
 
         width: 100%;
     }
-
-
 }
 
-
 .contact-form {
-
     background-color: $cl-grey-bg;
     color: $cl-grey-txt;
     padding: 30px;
     border-radius: 12px;
-
     display: flex;
     flex-direction: column;
     flex-wrap: wrap;
@@ -1362,7 +1336,6 @@ a[href^="tel:"]:hover {
         }
     }
     
-
     & .contact-input {
         display: block;
         width: 100%;
@@ -1373,7 +1346,6 @@ a[href^="tel:"]:hover {
         line-height: 26px;
         background-color: $cl-white;
         color: $cl-grey-txt;
-        // margin-bottom: 15px;
         border-color: transparent;
         border-radius: 8px;
     }
@@ -1390,28 +1362,43 @@ a[href^="tel:"]:hover {
         line-height: 17px;
         letter-spacing: 1px;
         text-transform: uppercase;
-        // display: block;
     }
 
-    .contact-input:focus {
+    & p.error {
+        display: none;
+    }
+
+    & .contact-input:focus {
         outline: 1px solid $cl-blue;
         color: #000000;
     }
     
-    .contact-input:invalid {
+    & .contact-input:invalid {
         outline: 1px solid #FF0000;
         color: #FF0000;
     }
+
+    & #userPhoneNumber:invalid + p {
+        display: block;
+    }
+
+    & #userEmail:invalid + p {
+        display: block;
+    }
+
+    & #userMessage:invalid + p {
+        display: block;
+    }
     
-    .contact-input:disabled {
+    & .contact-input:disabled {
         background-color: $cl-grey-alt;
     }
     
-    .contact-input:not(:placeholder-shown) {
+    & .contact-input:not(:placeholder-shown) {
         color:#000000;
     }
 
-    .button-reset {
+    & .button-reset {
         position: absolute;
         width: 32px;
         height: 32px;
@@ -1424,7 +1411,6 @@ a[href^="tel:"]:hover {
 }
 
 .about-page {
-
     margin-bottom: 60px;
 
     &_benefits {
@@ -1436,25 +1422,18 @@ a[href^="tel:"]:hover {
             display: flex;
             flex-direction: column;
             gap: 30px;
-
-
-            
         }
     }
 
     & .benefits-points {
-
         width: 100%;
-
-        border-left: 4px solid $cl-separator;
         height: 100%;
+        border-left: 4px solid $cl-separator;
         padding-left: 30px;
         
-
         & ul:last-of-type {
             margin-bottom: 0;
         }
-
 
         & .benefits-point {
             margin-bottom: 40px;
@@ -1483,10 +1462,7 @@ a[href^="tel:"]:hover {
                 line-height: 20px;
                 color: $cl-main;
                 font-weight: $regular;
-
             }
-    
-            
             
             & span {
                 font-size: 36px;
@@ -1494,10 +1470,8 @@ a[href^="tel:"]:hover {
                 font-weight: $bold;
                 vertical-align: middle;
             }
-
         }
     }
-
 
     & p {
         font-size: 19px;
@@ -1529,16 +1503,12 @@ a[href^="tel:"]:hover {
             left: 50%;
             top: 50%;
             transform: translate(-50%, -50%);
-
         }
-
     }
-
 }
 
 .contact-popup {
     display: none;
-
     position: fixed;
     top: 0;
     bottom:0;
@@ -1549,16 +1519,13 @@ a[href^="tel:"]:hover {
 
     & .contact-form {
         border-radius: 0;
-        // overflow-y: auto;
         
-
         & h2.title-grad {
             width: 80%;
         }
     }
 
     & .contact-close {
-
         position: absolute;
         right: 37px;
         top: 37px;
@@ -1568,8 +1535,6 @@ a[href^="tel:"]:hover {
         background-color: transparent;
         padding: 10px 7px;
         border-radius: 8px;
-
-
         display: flex;
         align-items: center;
         justify-content: center;
@@ -1581,7 +1546,6 @@ a[href^="tel:"]:hover {
             & > div {
                 transform: rotate(225deg);
             }
-
         }
 
         & > div {
@@ -1615,15 +1579,12 @@ a[href^="tel:"]:hover {
                 -moz-box-shadow: none;
                 box-shadow: none;
             }
-
         }
-        
     }
 
     &.active {
         display: block;
-    }
-    
+    } 
 }
 
 .member-cover {
@@ -1651,7 +1612,6 @@ a[href^="tel:"]:hover {
     color: $cl-grey-txt;
 }
 
-
 .team-page {
 
     & h2 {
@@ -1674,7 +1634,6 @@ a[href^="tel:"]:hover {
             height: 300px;
         }
 
-
         & .team-arrow {
             display: block;
             width: 32px;
@@ -1694,10 +1653,7 @@ a[href^="tel:"]:hover {
             }
         }
     }
-
 }
-
-
 
 .entry-team {
 
@@ -1721,9 +1677,8 @@ a[href^="tel:"]:hover {
     }
 
     & .member-cover {
-            height: 375px;
-            width: 300px;
-
+        height: 375px;
+        width: 300px;
     }
 
     & .member-details {
@@ -1767,19 +1722,17 @@ a[href^="tel:"]:hover {
             font-weight: $regular;
             color: $cl-black;
         }
-
-
     }
-
 }
 
-
 .btn-progress {
+
+    position: relative;
 
     &::before {
         content: none;
         position: absolute;
-        bottom: 50px;
+        bottom: 20px;
         left: 50%;
         transform: translate(-50%, -50%);
         width: 22px;
@@ -1788,8 +1741,6 @@ a[href^="tel:"]:hover {
         border-top: 4px solid transparent;
         border-radius: 50%;
         animation: rotate 5s linear infinite;
-        // opacity: 0;
-
     }
 
     &.active {
@@ -1798,41 +1749,33 @@ a[href^="tel:"]:hover {
             content: '';
         }
        
-
         & .btn {
             background-color: $cl-grey-alt !important;
             box-shadow: unset;
         }
     }
 
-
+    &.invalid {
+        pointer-events: none;
+    }
 }
-
-
-
-
 
 @keyframes rotate{
     from{ transform: rotate(-360deg); }
     to{ transform: rotate(360deg); }
 }
 
+@media (min-width: 412px) {
+    .header-content {
+        margin-top: 249px;
+    }
+}
 
-
-
-
-
-
-
-
-
-
-// @media (min-width: 414px) {
-    
-//     .header-content {
-//         margin-top: 250px;
-//     }
-// }
+@media (min-width: 720px) {
+    .header-content {
+        margin-top: 359px;
+    }
+}
 
 @media (min-width: 768px) {
     @import './responsive/media768';
@@ -1841,7 +1784,6 @@ a[href^="tel:"]:hover {
 @media (min-width: 1024px) {
     @import './responsive/media1024';
 }
-
 
 @media (min-width: 1440px) {
     @import './responsive/media1440';

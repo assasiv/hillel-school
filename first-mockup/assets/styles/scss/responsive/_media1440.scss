@@ -31,22 +31,17 @@
     }
 }
 
-
 .entry-team {
-
     position: relative;
 
     &_header {
-
         padding-left: 460px;
-
 
         & .member-cover {
             width: 400px;
             height: 500px;
             left: 120px;
         }
-
     }
 
     &_info {
@@ -75,8 +70,7 @@
                 margin-left: -16px;
             }
         }
-    }
-    
+    } 
 }
 
 .team-block {
