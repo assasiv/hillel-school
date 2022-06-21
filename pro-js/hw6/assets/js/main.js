@@ -33,27 +33,27 @@ while(true) {
 
 let vegetables = ["cabbage", "avocado", "tomato"];
 let fruits = ["grapes", "raspberry", "coconut"];
-let productOfChoise;
+let categoryOfChoise;
 
 if (category === "vegetables") {
-    productOfChoise = vegetables;
+    categoryOfChoise = vegetables;
 } else {
-    productOfChoise = fruits;
+    categoryOfChoise = fruits;
 }
 
 let product;
 
 label: while(true) {
-    product = prompt(`Available products are ${productOfChoise}. Which one you want to buy?`);
+    product = prompt(`Available products are ${categoryOfChoise}. Which one do you want to buy?`);
 
     if (!product) {
         continue;
     } 
     product = product.replaceAll(" ", "").toLowerCase();
 
-    for (i = 0; i < productOfChoise.length; i++) {
+    for (i = 0; i < categoryOfChoise.length; i++) {
 
-        if(productOfChoise[i] === product) {
+        if(categoryOfChoise[i] === product) {
             break label;
         }
     }
@@ -107,9 +107,3 @@ document.write(`
         <p>Final sum: <b>${finalPrice}</b></p>
     </div>
 `)
-
-
-
-
-
-
