@@ -1,0 +1,44 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+  }
+
+html, body {
+    height: 100%;
+}
+
+body {
+    font-family: 'Quicksand', sans-serif;
+    height: 100%;
+    background-color: #FFFFFF;
+    position: relative;
+}
+.wrap {
+    padding-top: 200px;
+}
+
+.box {
+    display: flex;
+    flex-flow: wrap row;
+    justify-content: center;
+    gap: 30px;
+}
+
+.box:not(:last-child) {
+    margin-bottom: 10px;
+}
+
+.box-items {
+    display: flex;
+    flex-flow: wrap column;
+    gap: 15px;
+    align-items: center;
+}
+
+.item-cover {
+    border-radius: 50%;
+    background-color: #4e1e1e;
+    height: 50px;
+    width: 50px;
+}
