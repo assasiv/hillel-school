@@ -1,7 +1,7 @@
 import React from 'react';
 import './SingleCourseCard.css';
 
-const CourseCardItems = ({ course }) => {
+const SingleCourseCard = ({ course }) => {
     const {
       image,
       level,
@@ -54,4 +54,4 @@ const CourseCardItems = ({ course }) => {
     );
 };
 
-export default CourseCardItems;
+export default SingleCourseCard;
