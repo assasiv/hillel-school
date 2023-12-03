@@ -6,6 +6,7 @@ import Home from './pages/Home';
 import HW1 from './pages/HW1';
 import HW2 from './pages/HW2';
 import HW3 from './pages/HW3';
+import HW4 from './pages/HW4';
 
 const App = () => {
   return (
@@ -25,6 +26,9 @@ const App = () => {
             <li>
               <Link to="/homework-3">Counter</Link>
             </li>
+            <li>
+              <Link to="/homework-4">Users Data</Link>
+            </li>
           </ul>
         </nav>
 
@@ -35,6 +39,7 @@ const App = () => {
           <Route path="/homework-1" element={<HW1 />} />
           <Route path="/homework-2" element={<HW2 />} />
           <Route path="/homework-3" element={<HW3 />} />
+          <Route path="/homework-4" element={<HW4 />} />
         </Routes>
       </div>
     </Router>
